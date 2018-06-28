@@ -1,12 +1,12 @@
-abstract Protocells
+abstract cells
 
-type Protocell <: Protocells
+type cell <: cells
     composition :: Vector{Int}
-    devtime :: Float64
-    metabolism::Function
+    fitness :: Float64
+    function ::Function
 end
 
-type Population <: Protocells
-    individuals::Array{Protocell}
+type Population <: cells
+    individuals::Array{cell}
 end
 
